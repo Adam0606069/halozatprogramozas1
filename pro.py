@@ -32,3 +32,4 @@ print(tuple([1,2,3]))
 # git config --global user.email: emailcím csatolása, beállítása
 # git log: commit előzmények megtekintése
 # git commit -m: commit-álni a legfrissebb munkát egy új snapshot-ként
+# git push: helyi commit publikálása
