@@ -18,3 +18,23 @@ def parosszamok(lista):
 print(f"A lista elemeinek összege: {osszegez(lista)}.")
 
 print(f"A lista páros elemeinek darabszáma: {parosszamok(lista)}.")
+
+#Irass ki egy sorba, 5 csillagot
+
+print("*"*5)
+
+for i in range(5):
+    print("*", end="")
+print()
+
+
+#Rajzolj piramist!
+
+n=9
+space_db=n-1
+csillag_db=1
+for i in range(n):
+    print(" " * space_db, end="")
+    print("*" * csillag_db)
+    space_db -= 1
+    csillag_db +=2
