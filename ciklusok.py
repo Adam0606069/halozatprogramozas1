@@ -38,3 +38,11 @@ for i in range(n):
     print("*" * csillag_db)
     space_db -= 1
     csillag_db +=2
+
+
+#szorzotabla
+
+for i in range (1,11):
+    for j in range (1,11):
+        print(f"{i*j:3}", end=" ")
+    print()
