@@ -11,3 +11,4 @@ while be!=0:
 
 print(osszeg)
 
+# Enter végjel
