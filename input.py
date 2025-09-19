@@ -13,10 +13,19 @@ osszeg=0
 # print(osszeg)
 
 
-while True:
-    be = input("Kérek egy számot: ")
-    if be == "":
-        break
-    osszeg += int(be)
+# while True:
+#     be = input("Kérek egy számot: ")
+#     if be == "":
+#         break
+#     osszeg += int(be)
 
-print("Összeg:", osszeg)
+# print("Összeg:", osszeg)
+
+#Kerj be egy szamot és 0-tól az utolsó számig írja ki a páros számokat.
+
+hatar=int(input("Kerem a szamot: "))
+szam=0
+while szam!=hatar+1:
+    if szam%2==0:
+        print(szam)
+    szam+=1
