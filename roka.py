@@ -55,3 +55,69 @@ if van==True:
     print("Előfordult")
 else:
     print("Nem fordult elő")
+
+#4. feladat
+
+volt_kisebb=False
+
+for index in range(len(libak)-1):
+    if libak[index]>libak[index+1]:
+        volt_kisebb=True
+        break
+
+if volt_kisebb:
+    print("Előfordult, hogy volt kisebb.")
+else:
+    print("Nem fotdult elő, hogy volt kisebb.")
+
+#5. feladat
+
+index=0
+
+while not (libak[index])>3:
+    index+=1
+
+print(f"{index+1}. napon sikerült először 3kg-nál nehezebb libát lopni.")
+
+#6. feladat
+#lineáris keresés
+
+van_6kg=False
+i=0
+
+while i<len(libak) and not(libak[i]==6):
+    i+=1
+
+if i<len(libak):
+    print(f"Volt 6kg súlyú liba a(z) {i+1}. napon.")
+else:
+    print("Nem volt 6kg súlyú liba.")
+
+#7. feladat
+#Megszámlálás
+
+farkas_db=0
+
+for liba in libak:
+    if liba>3:
+        farkas_db+=1
+
+print(f"A farkasnak {farkas_db} liba jutott.")
+
+#8. feladat
+#max kiválasztás
+
+max_index=0
+
+for index in range(len(libak)):
+    if libak[index]>libak[max_index] and libak[index]<=3:
+        max_index=index
+
+print(f"{libak[max_index]} kilós volt a rókánál maradó legnagyobb liba.")
+
+#9. feladat
+#kiírás
+
+with open ("liba_jo.txt", "w", encoding="utf-8") as fout:
+    for liba in libak:
+        print(liba*1.1, file=fout)
